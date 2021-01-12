@@ -1,0 +1,80 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.raywenderlich.android.majesticreader"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:5:3-27:17
+12        android:name="com.raywenderlich.android.majesticreader.framework.MajesticReaderApplication"
+12-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:9:7-58
+13        android:allowBackup="false"
+13-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:6:7-34
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.3.2] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\1eee6c75aae13e56b06efcc9fe6edc4b\core-1.3.2\AndroidManifest.xml:24:18-86
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:7:7-41
+17        android:label="@string/app_name"
+17-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:8:7-39
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:10:7-52
+19        android:supportsRtl="true"
+19-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:11:7-33
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:12:7-38
+22        <activity
+22-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:13:5-17:16
+23            android:name="com.raywenderlich.android.majesticreader.presentation.MainActivity"
+23-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:14:9-50
+24            android:label="@string/title_activity_main"
+24-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:15:9-52
+25            android:theme="@style/AppTheme.NoActionBar" >
+25-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:16:9-52
+26        </activity>
+27
+28        <!-- Splash Activity -->
+29        <activity android:name="com.raywenderlich.android.majesticreader.presentation.SplashActivity" >
+29-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:20:5-26:16
+29-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:20:15-58
+30            <intent-filter>
+30-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:21:7-25:23
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:22:9-60
+31-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:22:17-58
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:24:9-68
+33-->D:\New folder\clean-architecture-android-materials\starter\app\src\main\AndroidManifest.xml:24:19-66
+34            </intent-filter>
+35        </activity>
+36
+37        <service
+37-->[androidx.room:room-runtime:2.2.6] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\6a762abd469e8a47470677d42129bbc9\room-runtime-2.2.6\AndroidManifest.xml:25:9-28:40
+38            android:name="androidx.room.MultiInstanceInvalidationService"
+38-->[androidx.room:room-runtime:2.2.6] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\6a762abd469e8a47470677d42129bbc9\room-runtime-2.2.6\AndroidManifest.xml:26:13-74
+39            android:directBootAware="true"
+39-->[androidx.room:room-runtime:2.2.6] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\6a762abd469e8a47470677d42129bbc9\room-runtime-2.2.6\AndroidManifest.xml:27:13-43
+40            android:exported="false" />
+40-->[androidx.room:room-runtime:2.2.6] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\6a762abd469e8a47470677d42129bbc9\room-runtime-2.2.6\AndroidManifest.xml:28:13-37
+41
+42        <provider
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\7150157bc6fb5edb4451ddb1972d8bd5\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+43            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\7150157bc6fb5edb4451ddb1972d8bd5\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+44            android:authorities="com.raywenderlich.android.majesticreader.lifecycle-process"
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\7150157bc6fb5edb4451ddb1972d8bd5\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+45            android:exported="false"
+45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\7150157bc6fb5edb4451ddb1972d8bd5\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+46            android:multiprocess="true" />
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\hasan.khan\.gradle\caches\transforms-2\files-2.1\7150157bc6fb5edb4451ddb1972d8bd5\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+47    </application>
+48
+49</manifest>
